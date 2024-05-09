@@ -71,12 +71,14 @@ export default function Post() {
 							Posted on: <span className='text-gray-700'>{post?.pub_date}</span>
 						</p>
 					</div>
-					<button
-							className='bg-red-500 text-white text-sm px-4 py-3 rounded-md mt-4'
+					{userData.uid === post?.author_id && (
+						<button
+							className='bg-red-500 text-white px-4 py-2 rounded-md mt-4'
 							onClick={() => deletePost(post?.post_id!)}
 						>
 							Delete Post
-					</button>
+						</button>
+					)}
 					
 				</header>
 
