@@ -109,7 +109,9 @@ export default function Comments({
 						</div>
 					</div>
 				))}
+				
 			</div>
+			
 		</main>
 	);
 }
