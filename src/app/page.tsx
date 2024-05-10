@@ -30,7 +30,7 @@ export default function Home() {
 	return (
 		<div>
 			<Nav />
-			<main className='p-8 w-full flex lg:flex-col flex-col items-center gap-5 flex-wrap justify-center'>
+			<main className='p-8 w-full flex lg:flex-row flex-col items-center gap-5 flex-wrap justify-center'>
 				
 				{posts?.map((post) => (
 					<Link
